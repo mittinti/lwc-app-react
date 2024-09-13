@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>React App</title>
+    <script src="https://spde12-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="lwcContainer"></div>
+
+    <script>
+        // This script sets up Lightning Out and loads your component into the container
+        $Lightning.use(
+            "c:LightningOutApp",  // Reference to your Aura application
+            function () {
+                $Lightning.createComponent(
+                    "c:LwcWrapper",  // The Aura wrapper component that includes your LWC
+                    {},  // Pass any attributes here
+                    "lwcContainer",  // The ID of the div where the LWC will be rendered
+                    function (cmp) {
+                        console.log('LWC component loaded', cmp);
+                    }
+                );
+            },
+            "https://spde12-dev-ed.lightning.force.com"
+        );
+    </script>
+  </body>
+</html>

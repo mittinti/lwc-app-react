@@ -2,30 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>React App</title>
-    <script src="https://spde12-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
 
+    <title>React App</title>
   </head>
   <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="lwcContainer"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    <script>
-        // This script sets up Lightning Out and loads your component into the container
-        $Lightning.use(
-            "c:LightningOutApp",  // Reference to your Aura application
-            function () {
-                $Lightning.createComponent(
-                    "c:LwcWrapper",  // The Aura wrapper component that includes your LWC
-                    {},  // Pass any attributes here
-                    "lwcContainer",  // The ID of the div where the LWC will be rendered
-                    function (cmp) {
-                        console.log('LWC component loaded', cmp);
-                    }
-                );
-            },
-            "https://spde12-dev-ed.lightning.force.com"
-        );
-    </script>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
