@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <h2>Render Salesforce LWC in React</h2>
+        <iframe
+            src="https://spde12-dev-ed.lightning.force.com/external-lwc.html"
+            width="600"
+            height="400"
+            title="Salesforce LWC"
+        ></iframe>
     </div>
   );
 }
