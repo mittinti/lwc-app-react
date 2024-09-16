@@ -9,10 +9,12 @@ const LWCComponent = () => {
     script.src = 'https://spde12-dev-ed.lightning.force.com/lightning/lightning.out.js'; // Replace with your Salesforce domain
     script.onload = () => {
       // Initialize Lightning Out
+      // eslint-disable-next-line no-undef
       $Lightning.use(
         'c:LightningOutApp', // Replace with your Aura app name
         () => {
           // Create and render the Lightning component
+          // eslint-disable-next-line no-undef
           $Lightning.createComponent(
             'c:LwcWrapper', // Replace with your Lightning component name
             {}, // Attributes to pass to the component, if any
